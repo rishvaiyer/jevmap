@@ -1,0 +1,44 @@
+{
+  "name": "jevmap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evidence-backed Jev opportunity mapping for public GitHub repositories.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"tsx server/index.ts\" \"vite\"",
+    "build": "tsc -p tsconfig.json && vite build",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
+    "@xyflow/react": "^12.8.6",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  }
+}
